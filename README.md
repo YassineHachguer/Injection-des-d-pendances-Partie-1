@@ -38,3 +38,9 @@ Dans cette approche, Injection des dépendances par instanciation Dynamique en u
 **Fichier de Config XML :**
 ![img_10.png](images/img_10.png)
 
+**Version Annotations :**
+![img_11.png](images/img_11.png)
+
+**Ajout des Annotations nécessaires :**
+![img_12.png](images/img_12.png)
+![img_13.png](images/img_13.png)
