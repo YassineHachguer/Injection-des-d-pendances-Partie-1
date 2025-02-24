@@ -31,6 +31,10 @@ Dans cette approche, Injection des dépendances par instanciation Dynamique en u
 **Résultat :**
 ![img_8.png](images/img_8.png)
 
+### c. En utilisant le Framework Spring
+**Version XML :**
+![img_9.png](images/img_9.png)
 
-
+**Fichier de Config XML :**
+![img_10.png](images/img_10.png)
 
