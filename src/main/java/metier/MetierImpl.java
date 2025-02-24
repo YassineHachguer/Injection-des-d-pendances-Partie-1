@@ -13,4 +13,8 @@ public class MetierImpl implements IMetier {
         return res;
     }
 
+    //Pour Injecter dans la variable dao un objet d'une classe qui implemente l'interface IDao
+    public void setDao(IDao dao) {
+        this.dao = dao;
+    }
 }
