@@ -6,6 +6,8 @@ import dao.IDao;
 public class MetierImpl implements IMetier {
     //Couplage faible on depend des interfaces, pas des implémentations
     private IDao dao;
+    public MetierImpl(){
+    }
 
     public MetierImpl(IDao dao) {
         this.dao = dao;
