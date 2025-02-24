@@ -1,6 +1,8 @@
 package presentation;
 
 import dao.IDao;
+import metier.IMetier;
+import metier.MetierImpl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,7 +15,13 @@ public class PresentationV2 {
             String daoClassname=scanner.nextLine();
             Class cDao=Class.forName(daoClassname);
             IDao dao =(IDao) cDao.getConstructor().newInstance();
-            System.out.println(dao.getData());
+
+            //MetierImpl metier =new MetierImpl(d);
+            String metierClassname=scanner.nextLine();
+            Class cMetier = Class.forName(metierClassname);
+            IMetier metier = (IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);
+
+            System.out.println("RES = " + metier.calcul());
             //l'injection des dépendances Par instanciation dynamique
         }catch (Exception e){
             System.out.println(e.getMessage());
